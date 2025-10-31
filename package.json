@@ -3,6 +3,7 @@
   "version": "5.7.1",
   "description": "Library that helps collect and parse webrtc stats.",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/peermetrics/webrtc-stats",
   "author": "Andrei Onel <andrei@peermetrics.io>",
   "license": "MIT",
@@ -14,7 +15,9 @@
     "analytics"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc --project tsconfig.build.json",
+    "build:js": "rollup -c",
     "serve": "http-server example",
     "watch": "rollup -c -w",
     "prepublishOnly": "npm run build",

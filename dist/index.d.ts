@@ -1,5 +1,6 @@
 /// <reference types="node" />
 import { EventEmitter } from 'events';
+export type { WebRTCStatsConstructorOptions, AddConnectionOptions, AddConnectionResponse, MonitoredPeersObject, RemoveConnectionOptions, RemoveConnectionReturn, TimelineEvent, StatsEvent, TimelineTag, GetUserMediaResponse, MonitorPeerOptions, ParseStatsOptions, LogLevel } from './types/index';
 import type { WebRTCStatsConstructorOptions, AddConnectionOptions, AddConnectionResponse, RemoveConnectionOptions, RemoveConnectionReturn, TimelineEvent, TimelineTag } from './types/index';
 export declare class WebRTCStats extends EventEmitter {
     private readonly isEdge;

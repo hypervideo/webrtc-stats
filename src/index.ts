@@ -1,6 +1,19 @@
 import {EventEmitter} from 'events'
 import {v4 as uuid} from 'uuid'
 
+export type {
+  WebRTCStatsConstructorOptions,
+  AddConnectionOptions,
+  AddConnectionResponse,
+  MonitoredPeersObject,
+  RemoveConnectionOptions,
+  RemoveConnectionReturn,
+  TimelineEvent,
+  StatsEvent,
+  TimelineTag,
+  GetUserMediaResponse, MonitorPeerOptions, ParseStatsOptions, LogLevel
+} from './types/index'
+
 import type {
   WebRTCStatsConstructorOptions,
   AddConnectionOptions,
